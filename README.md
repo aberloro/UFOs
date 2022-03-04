@@ -1,5 +1,5 @@
 # UFOs
- Use JavaScript and HTML to create an innteractive presentation of data on UFO sightings in McMinnville, Oregon.
+ Use JavaScript and HTML to create an innteractive presentation of data on UFO sightings.
 
 ## Overview of Project
 
@@ -24,29 +24,33 @@ Phase2 of this project will allow readers to filter UFO sightings on multiple si
     - Execute an "updateFilters" function that stores all user-input filters in an objecct and passes it through a "filterTable" function.
     - Execute a "filterTable" function based on the filters stored in the "updateFilters" object.
     - Pass the "filterTable" output to the "buildTable" function to produce a table with data filtered according to user input. 
- - [index.html](https://github.com/aberloro/UFOs/blob/main/index.html) file to apply Bootstrap3 componenets and [styles.css](https://github.com/aberloro/UFOs/blob/main/static/css/style.css) style to the filtered table from the app.js file. 
+ - [index.html](https://github.com/aberloro/UFOs/blob/main/index.html) file to apply Bootstrap3 components and [styles.css](https://github.com/aberloro/UFOs/blob/main/static/css/style.css) style to the filtered table from the app.js file. 
 
 ## Results
- Performing a search is as easy as adding the filters you want applied to the form on screen and hitting enter or clicking the screen! You can use as many or as few filters as you like and can reset by clicking the nav bar, the refresh buttonon your browser, or deleting any input you entered.
+ Performing a search is as easy as adding the filters you want applied to the form and hitting enter or clicking the screen! You can use as many or as few filters as you like and can reset by clicking the nav bar or refresh button on your browser, or deleting any input you entered.
 
  Select by date: 1/1/2010...the UFOs out here celebrating New Years...
-  img
+ 
+  ![filterDate](https://user-images.githubusercontent.com/93740725/156711884-734f4939-f57e-4b72-be11-7e48093dafbc.png)
 
- Select by date and shape: 1/1/2010, triangle
- img
+ Select by date and shape: 1/11/2010, triangle
+ ![filterDateShapeState](https://user-images.githubusercontent.com/93740725/156711953-f307a66f-598a-434e-91d7-003620061d19.png)
 
- Select by date, shape, and state: 1/11/2010, triangle, ca
- img
 
- Select by date, shape, state, city: 1/11/2010, triangle, ca, el cajon
- img
+ Select by date, shape, and city: 1/11/2010, triangle, el cajon
+ ![filterDateShapeStateCity](https://user-images.githubusercontent.com/93740725/156712000-1ae9ac71-effb-4d71-963b-860bf3844d31.png)
+
 
 
  ## Summary
-  ### Limitations
- One drawback of this webpage is the data is not as clean as it could be.  The duration of each event, for example is entered in a number of formats: "1 minute", "4min" "half an hour", and "5-6 minutes" are all entries.  If the duration data formatting were more consistent we could filter that as well.  A second problem with this page is that the filters require an exact match.  Entering the state of "CA" or "Ca" would not return results where "ca" would.  Updating the javascript to look for a lose mathc instead of exact match would make this page more user friendly.
+ ### Limitations
+ 
+ One drawback of this webpage is the data is not as clean as it could be.  The duration of each event, for example is entered in a number of formats: "1 minute", "4min" "half an hour", and "5-6 minutes" are all entries.  If the duration data formatting were more consistent we could filter that as well.  
+ 
+ A second problem with this page is that the filters require an exact match.  Entering the state of "CA" or "Ca" would not return results where "ca" would.  Updating the javascript to look for a lose match instead of exact match would make this page more user friendly.
 
  ### Additional Analysis
+
 I recommend the folllowing edits for future development:
  - Cleaning the duration and shape data for format consistency to allow for filters on those attributes as well.
  - Relaxing the "exact match" requirement of the filters.

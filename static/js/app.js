@@ -57,9 +57,10 @@ function updateFilters() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    for (const [filterId,value] of Object.entries(filters)) {
-      if (value) {filteredData.filter(row => row[filterId] ===value);}
-    }
+    for (var key in filters) {
+      var value = filters[key];
+      if (value) {filteredData = filteredData.filter(row => row[key] ===value);}
+  }
 
 
     // 10. Finally, rebuild the table using the filtered data

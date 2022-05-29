@@ -1,5 +1,5 @@
 # UFOs
- Use JavaScript and HTML to create an innteractive presentation of data on UFO sightings.
+ Use JavaScript and HTML to create an interactive presentation of data on UFO sightings.
 
 ## Overview of Project
 
